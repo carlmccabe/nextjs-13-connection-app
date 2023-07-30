@@ -72,7 +72,6 @@ const StopSelectors: React.FC<StopSelectorsProps> = ({
       <h2>Select Stops</h2>
       {renderStopSelectors()}
       <Button disabled={newStopDisabled} onClick={() => setStopIds([...stopIds, ''])}>Add New Stop</Button>
-      {/* <pre>{JSON.stringify(stopIds, null, 2)}</pre> */}
     </div>
   );
 };

@@ -1,9 +1,8 @@
 import { NextResponse } from 'next/server'
 import { Connection } from '../../../../interfaces'
-import DataSet from '@/data'
 
 export async function GET(request: Request) {
-    // get saved data from source/api here
+    // Todo get saved data from source/api here
     let connection: Connection = {
         slug: 'home',
         title: 'Home Commute',

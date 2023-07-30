@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server'
 import { Connection } from '../../../interfaces'
 
 export async function GET(request: Request) {
-    //get from external source/api here
+    //Todo get from external source/api here
     let connections: Connection[] = [
         {
             slug: 'home',

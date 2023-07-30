@@ -2,18 +2,9 @@
 import { useRouter } from 'next/navigation'
 import { Alert, Button, Label, Select, TextInput } from 'flowbite-react'
 import { HiInformationCircle } from 'react-icons/hi';
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import StopSelectors from '@/components/StopSelector'
 import _ from 'lodash'
-
-async function sendData() {
-    const res = await fetch(`/api/connection/new`)
-
-    if (!res.ok)
-        return 'Failed to fetch data'
-
-    return res.ok
-}
 
 export default function Home() {
     const router = useRouter()
